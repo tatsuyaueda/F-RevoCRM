@@ -1,0 +1,3 @@
+[submodule "modules/SamlSso/php-saml"]
+	path = modules/SamlSso/php-saml
+	url = https://github.com/onelogin/php-saml.git

@@ -201,6 +201,8 @@ function csrf_ob_handler($buffer, $flags) {
  */
 function csrf_check($fatal = true) {
     if ($_SERVER['REQUEST_METHOD'] !== 'POST') return true;
+    // SAML SSO - ByPass CSRF Check
+    if ($_REQUEST['module'] === 'SamlSso' && $_REQUEST['action'] === 'Acs') return true;
     csrf_start();
     $name = $GLOBALS['csrf']['input-name'];
     $ok = false;

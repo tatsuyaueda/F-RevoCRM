@@ -66,8 +66,8 @@
 			padding-top: 86px;
 		}
 		.widgetHeight {
-			height: 410px;
-			margin-top: 20px !important;
+			height: 480px;
+			margin-top: -10px !important;
 		}
 		.loginDiv {
 			max-width: 380px;
@@ -228,6 +228,7 @@
 						</div>
 						<div class="group">
 							<button type="submit" class="button buttonBlue">ログイン</button><br>
+							<button type="button" class="button buttonBlue" onclick="location.href='index.php?module=SamlSso&action=SsoLogin'">SAML2でログイン</button><br>
 							<a class="forgotPasswordLink" style="color: #15c;">パスワードを忘れた場合は</a>
 						</div>
 					</form>
